@@ -1,8 +1,8 @@
 'use client';
 
-import { motion } from 'framer-motion';
 import { Smartphone, Server, Database, Settings, LucideIcon } from 'lucide-react';
 import { SectionHeading } from './SectionHeading';
+import { motion, type Variants } from 'framer-motion';
 
 // 1. Tipado y estructura de datos refinada
 type SkillCategory = {
@@ -57,13 +57,13 @@ const containerVariants = {
   }
 };
 
-const itemVariants = {
-  hidden: { opacity: 0, y: 24 },
-  visible: { 
-    opacity: 1, 
-    y: 0, 
-    transition: { duration: 0.6, ease: [0.22, 1, 0.36, 1] }
-  }
+const itemVariants: Variants = {
+  hidden: { opacity: 0, y: 20 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.5, ease: "easeInOut" },
+  },
 };
 
 const SkillCard = ({ category }: { category: SkillCategory }) => {
@@ -71,10 +71,10 @@ const SkillCard = ({ category }: { category: SkillCategory }) => {
   const Icon = category.Icon;
 
   return (
-    <motion.div 
-      variants={itemVariants}
-      className={`group relative flex flex-col justify-between p-6 rounded-2xl bg-zinc-900/40 border border-zinc-800 backdrop-blur-sm transition-all duration-300 hover:bg-zinc-900/60 hover:border-zinc-700 hover:-translate-y-1 hover:shadow-xl ${theme.glow}`}
-    >
+  <motion.div
+  variants={itemVariants as Variants}
+  className={`group relative flex flex-col...`}
+>
       {/* Indicador de brillo superior en hover */}
       <div className={`absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-${category.colorTheme}-500/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500`} />
 
