@@ -4,7 +4,9 @@ import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { ArrowLeft, GitBranch, Code2 } from 'lucide-react';
 
-export default function ProyectoTrabajosExpress() {
+
+
+export default function tempisque() {
   return (
     <main className="min-h-screen bg-black text-white pt-24 pb-12 px-6">
       <div className="max-w-5xl mx-auto">
@@ -50,5 +52,8 @@ export default function ProyectoTrabajosExpress() {
         </div>
       </div>
     </main>
+
+
+
   );
 }
