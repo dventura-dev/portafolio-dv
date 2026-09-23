@@ -65,7 +65,7 @@ export const Hero = () => {
             </motion.div>
             
             <motion.h1 variants={itemVariants} className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold tracking-tight mb-6 leading-[1.1] text-transparent bg-clip-text bg-gradient-to-r from-lime-400 via-emerald-400 to-cyan-400 drop-shadow-[0_0_25px_rgba(163,230,53,0.2)]">
-              Hola, soy Daniel Antonio
+              Hola, soy Daniel Ventura
             </motion.h1>
             
             {/* Descripción integral abarcando Web, Backend, Bases de Datos y Apps Móviles */}
