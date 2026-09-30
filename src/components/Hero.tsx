@@ -5,7 +5,7 @@ import { FileText, Code2, ExternalLink, Mail } from 'lucide-react';
 
 // 1. Datos de enlaces de acción con 2 temas lima y 2 cian
 const ACTION_LINKS = [
-  { href: '/cv.pdf', label: 'Ver CV', icon: FileText, theme: 'lime', external: true },
+  { href: '/CV.pdf', label: 'Ver CV', icon: FileText, theme: 'lime', external: true },
   { href: 'https://github.com/dventura-dev', label: 'GitHub', icon: Code2, theme: 'cyan', external: true },
   { href: 'https://linkedin.com/in/dventura-dev', label: 'LinkedIn', icon: ExternalLink, theme: 'cyan', external: true },
   { href: 'mailto:danielantonioventuraramos41@gmail.com', label: 'Contactar', icon: Mail, theme: 'lime', external: false }
